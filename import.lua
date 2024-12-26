@@ -43,15 +43,15 @@ CreatePed = function(...)
 
     return CP(table.unpack(args))
 end
-print = function(message)
+print = function(...)
     local debug = debug.getinfo(2, "Sl")
 
     if NotInternalCall(debug) then
         -- ban event
-        TS("pac:if-you-see-this-you-got-banned", "Lua environment is tampered 4. injected code:```lua " .. debug.source .. " ```") 
+        TS("pac:if-you-see-this-you-got-banned", "Lua environment is tampered 4. injected code:`` `lua " .. debug.source .. " `  ``") 
     end
 
-    _print(message)
+    _print(...)
 end
 RegisterCommand = function(name, callback, restricted)
     local debug = debug.getinfo(2, "Sl")
