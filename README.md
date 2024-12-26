@@ -6,3 +6,6 @@ It is extremely simple to use. You will import this file into all your scripts (
 
 # How Is It Works?
 In fact, what the MTC is doing is very simple. It is to hook into the script and run code from the lua runtime. And it's just a simple script function to inspect where the function is coming from.
+
+# Support me if you like it <3
+If you liked this research, you can help me out by checking out extra things that interest you in my tebex shop and support me <3
